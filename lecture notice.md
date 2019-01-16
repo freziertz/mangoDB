@@ -43,3 +43,14 @@ Read Preference: Primary Preferred
 Click "Add to Favorites" and enter M001 RS as the Favorite Name. Adding this connection as a favorite will enable you to easily connect to our class MongoDB deployment after closing and restarting Compass at some point in the future.
 
 Now, click "Connect" and load the databases in the M001 class MongoDB deployment.
+
+Lecture Notes
+Please use the following command to connect to the class Atlas cluster. You should issue this command in the cmd shell, the OSX Terminal application, or another command-line interface of your choice.
+
+mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics
+Note
+
+While connecting to your MongoDB Atlas cluster, or any MongoDB server, from the mongo shell, you may see the following warning message:
+
+... WARNING: shell and server versions do not match
+This warning message can be safely dismissed for the purposes of this course. The purpose of this message is to let you know that the version of the server/cluster that you are connecting to has a different version then the one of your client mongo shell. Given the different versions between server and client, there might be some incompatibility commands/features not supported by either the client shell or the server. However, in this course, you will not encounter any such issue.
