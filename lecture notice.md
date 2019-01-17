@@ -130,4 +130,12 @@ db.moviesScratch.insertMany(
 );
 
 
+# Lecture Notes
+Notes
+
+To follow this lecture you need to connect to the course cluster!
+At minute 3:30 Shannon mentions that you do not need to use quotes while building your queries in MongoDB Compass. This is no longer correct! You need to provide quotes when using the dot notation to express queries.
+It is good practice to surround keys with quotes in any situation.
+
+
 
