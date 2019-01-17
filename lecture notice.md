@@ -60,3 +60,8 @@ This warning message can be safely dismissed for the purposes of this course. Th
 To begin creating your Atlas Sandbox cluster, visit https://cloud.mongodb.com/links/registerForAtlas and complete the account creation form you see on that page.
 
 Detailed instructions for creating a sandbox cluster can be found in the lab immediately following this lesson.
+
+Lecture Notes
+Note:
+
+In this lecture video we end up getting connected to the Primary node of our Sandbox replica set. In case you get connected to a Secondary node, in order to run queries or commands, you will have to run rs.slaveOk() shell command, to list databases, collections and run queries.
