@@ -65,3 +65,69 @@ Lecture Notes
 Note:
 
 In this lecture video we end up getting connected to the Primary node of our Sandbox replica set. In case you get connected to a Secondary node, in order to run queries or commands, you will have to run rs.slaveOk() shell command, to list databases, collections and run queries.
+
+show databases
+show dbs
+
+
+load("loadMovieDetailsDataset.js")
+
+use video
+
+show collections
+
+db.movieDetails.find().pretty()
+
+In Compass, view the video.movieDetails collection and apply the filter {genres: "Comedy"}.
+How many documents in video.movieDetails match the filter {genres: "Comedy"}
+
+# Insert document by using shell command
+MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.moviesScratch.insertOne({title:"Star Trek II: The Wrath of Khan",year:1882,imdb:"tt0084726"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5c405948d7ff837a88036668")
+}
+MongoDB Enterprise Cluster0-shard-0:PRIMARY>
+
+
+Chapter 2: The MongoDB Query Language + Atlas
+
+# Creating Documents: insertMany()
+
+db.moviesScratch.insertMany(
+    [
+        {
+  	    "_id" : "tt0084726",
+  	    "title" : "Star Trek II: The Wrath of Khan",
+  	    "year" : 1982,
+  	    "type" : "movie"
+          },
+          {
+  	    "_id" : "tt0796366",
+  	    "title" : "Star Trek",
+  	    "year" : 2009,
+  	    "type" : "movie"
+          },
+          {
+  	    "_id" : "tt0084726",
+  	    "title" : "Star Trek II: The Wrath of Khan",
+  	    "year" : 1982,
+  	    "type" : "movie"
+          },
+          {
+  	    "_id" : "tt1408101",
+  	    "title" : "Star Trek Into Darkness",
+  	    "year" : 2013,
+  	    "type" : "movie"
+          },
+          {
+  	    "_id" : "tt0117731",
+  	    "title" : "Star Trek: First Contact",
+  	    "year" : 1996,
+  	    "type" : "movie"
+        }
+    ]
+);
+
+
+
