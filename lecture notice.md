@@ -54,3 +54,9 @@ While connecting to your MongoDB Atlas cluster, or any MongoDB server, from the 
 
 ... WARNING: shell and server versions do not match
 This warning message can be safely dismissed for the purposes of this course. The purpose of this message is to let you know that the version of the server/cluster that you are connecting to has a different version then the one of your client mongo shell. Given the different versions between server and client, there might be some incompatibility commands/features not supported by either the client shell or the server. However, in this course, you will not encounter any such issue.
+
+
+# Lecture Notes
+To begin creating your Atlas Sandbox cluster, visit https://cloud.mongodb.com/links/registerForAtlas and complete the account creation form you see on that page.
+
+Detailed instructions for creating a sandbox cluster can be found in the lab immediately following this lesson.
