@@ -137,5 +137,30 @@ To follow this lecture you need to connect to the course cluster!
 At minute 3:30 Shannon mentions that you do not need to use quotes while building your queries in MongoDB Compass. This is no longer correct! You need to provide quotes when using the dot notation to express queries.
 It is good practice to surround keys with quotes in any situation.
 
+# Lecture Notes
+Notes
+
+To follow this lecture you need to connect to the course cluster!
+At minute 3:30 Shannon mentions that you do not need to use quotes while building your queries in MongoDB Compass. This is no longer correct! You need to provide quotes when using the dot notation to express queries.
+It is good practice to surround keys with quotes in any situation.
+
+
+# my atlas
+https://cloud.mongodb.com/user#/atlas/login
+
+# my console
+mongo "mongodb+srv://cluster0-dztdv.mongodb.net/test" --username frezier --password godgreat@
+
+Lecture Notes
+Further information on cursor iteration in the mongo shell and getMore command
+it means iterate
+
+Lecture Notes
+Important aspect to consider about replaceOne:
+
+The replacement document cannot contain update operators.
+replaceOne will apply changes to only one document, the first found in the server that matches the filter expression, using the $natural order of documents in the collection.
+replaceOne() documentation
+
 
 
